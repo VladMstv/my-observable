@@ -45,8 +45,8 @@ const timer$ = new Observable((obs: Observer<any>) => {
 });
 
 const subscription = timer$.subscribe({
-  next: (val) => {
-    console.log(val);
+  next: () => {
+    console.log("tick");
   },
   complete: () => {}
 });
